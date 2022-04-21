@@ -109,7 +109,7 @@ class _CameraViewState extends State<CameraView> with WidgetsBindingObserver {
       if (predicting) {
         return;
       }
-
+  
       setState(() {
         predicting = true;
       });

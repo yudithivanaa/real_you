@@ -6,10 +6,7 @@ import 'package:object_detection/ui/home_view.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  // Obtain a list of the available cameras on the device.
-  final cameras = availableCameras();
-// Get a specific camera from the list of available cameras.
-  final firstCamera = cameras.first;
+
   runApp(MyApp());
 }
 
