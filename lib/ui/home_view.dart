@@ -27,7 +27,7 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Stack(
         children: <Widget>[
           // Camera View
@@ -40,7 +40,7 @@ class _HomeViewState extends State<HomeView> {
           Align(
             alignment: Alignment.topLeft,
             child: Container(
-              padding: EdgeInsets.only(top: 20),
+              padding: EdgeInsets.only(top: 25),
               child: Text(
                 'Real_you',
                 textAlign: TextAlign.left,
@@ -62,12 +62,13 @@ class _HomeViewState extends State<HomeView> {
                   (BuildContext context, ScrollController scrollController) {
                 return Container(
                   decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.black.withOpacity(1.0),
                       borderRadius: BORDER_RADIUS_BOTTOM_SHEET),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(),
+                      //FloatingActionButton(onPressed: onPressed),
                       ElevatedButton(
                           onPressed: () {}, child: Text("Take Picture")),
                       ElevatedButton(
